@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+@plugin "@iconify/tailwind4";
+
+@theme {
+  --color-brands-dark-green: #118871;
+  --color-brands-light-green: #15ab8e;
+
+  --font-size-xs: 16px;
+  --font-size-sm: 20px;
+  --font-size-md: 24px;
+  --font-size-lg: 28px;
+  --font-size-xl: 32px;
+
+  --font-family-brand: 'Red Rose', serif;
+  --font-family-sans: 'Inter', sans-serif;
+}
+
+/* KELAS KUSTOM */
+.text-dark-green {
+  color: var(--color-dark-green);
+}
+
+.text-xs {
+  font-size: var(--font-size-xs);
+}
+
+.text-sm {
+  font-size: var(--font-size-sm);
+}
+
+.text-md {
+  font-size: var(--font-size-md);
+}
+
+.text-lg {
+  font-size: var(--font-size-lg);
+}
+
+.text-xl {
+  font-size: var(--font-size-xl);
+}
+
+.font-brand {
+  font-family: var(--font-family-brand);
+}
+
+.font-brand {
+  font-family: var(--font-family-brand);
+}
+
+.font-sans {
+  font-family: var(--font-family-sans);
+}
