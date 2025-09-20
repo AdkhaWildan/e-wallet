@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Forgot Pin</title>
+  </head>
+  <body>
+    <div class="max-w[768px] container">
+      <div
+        class="flex h-dvh flex-col items-center justify-center bg-green-50 p-4"
+      >
+        <div class="w-ful flex flex-col">
+          <!-- Illustation -->
+          <img
+            src="../assets/images/forgot-password.svg"
+            alt="Illustration"
+            class="h-[160px]"
+          />
+          <!-- End Illustration -->
+
+          <!-- Title and Description -->
+          <div class="mt-8 mb-6 flex flex-col">
+            <h1 class="text-center text-lg font-semibold text-gray-900">
+              Lupa PIN
+            </h1>
+            <p class="text-center text-xs font-medium text-gray-400">
+              Segera cek email Anda setelah klik KIRIM RESET LINK
+            </p>
+          </div>
+          <!-- End Title adn Description -->
+
+          <!-- Form -->
+          <form action="#" method="post" class="flex flex-col gap-4">
+            <!-- Input Pin -->
+            <div>
+              <div class="relative">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="peer w-full rounded-2xl border-2 border-gray-300 bg-white py-3 ps-12 pe-12 text-sm text-gray-900 placeholder:text-gray-400 invalid:bg-red-100 invalid:text-red-500 invalid:caret-red-500 focus:ring-2 focus:ring-green-400 focus:outline-none focus:invalid:ring-red-600 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400"
+                />
+                <div
+                  class="absolute inset-y-0 start-0 flex items-center ps-4 text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-400"
+                >
+                  <span
+                    class="icon-[material-symbols--mail-rounded] text-md"
+                  ></span>
+                </div>
+                <div
+                  class="absolute inset-y-0 end-0 flex items-center pe-4 text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-400"
+                ></div>
+              </div>
+            </div>
+            <!-- End Input Pin -->
+
+            <!-- Button Action -->
+            <button
+              type="button"
+              class="bg-brands-light-green hover:bg-brands-dark-green mt-4 inline-flex items-center justify-center gap-2 rounded-xl p-2.5 text-sm font-semibold text-white uppercase focus:ring-2 focus:ring-green-400 focus:outline-none disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400"
+            >
+              <span
+                class="icon-[material-symbols--send-rounded] text-md"
+              ></span>
+              <span>KIRIM RESET LINK</span>
+            </button>
+            <!-- End Button -->
+          </form>
+          <!-- End Form -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
