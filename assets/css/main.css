@@ -40,13 +40,13 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-5xl: 3rem;
-    --text-5xl--line-height: 1;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
+    --radius-4xl: 2rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-brands-dark-green: #118871;
@@ -251,15 +251,6 @@
   .my-2\.5 {
     margin-block: calc(var(--spacing) * 2.5);
   }
-  .mt-1 {
-    margin-top: calc(var(--spacing) * 1);
-  }
-  .mt-2 {
-    margin-top: calc(var(--spacing) * 2);
-  }
-  .mt-3 {
-    margin-top: calc(var(--spacing) * 3);
-  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -269,17 +260,8 @@
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
-  .mb-5 {
-    margin-bottom: calc(var(--spacing) * 5);
-  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
-  }
-  .mb-8 {
-    margin-bottom: calc(var(--spacing) * 8);
-  }
-  .mb-56 {
-    margin-bottom: calc(var(--spacing) * 56);
   }
   .icon-\[material-symbols--arrow-left-alt-rounded\] {
     display: inline-block;
@@ -437,6 +419,19 @@
     mask-size: 100% 100%;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M12 19.9q2.425-.75 4.05-2.962T17.95 12H12V4.125l-6 2.25v5.175q0 .175.05.45H12zm0 2q-.175 0-.325-.025t-.3-.075Q8 20.675 6 17.638T4 11.1V6.375q0-.625.363-1.125t.937-.725l6-2.25q.35-.125.7-.125t.7.125l6 2.25q.575.225.938.725T20 6.375V11.1q0 3.5-2 6.538T12.625 21.8q-.15.05-.3.075T12 21.9'/%3E%3C/svg%3E");
   }
+  .icon-\[material-symbols--send-rounded\] {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M4.4 19.425q-.5.2-.95-.088T3 18.5V14l8-2l-8-2V5.5q0-.55.45-.837t.95-.088l15.4 6.5q.625.275.625.925t-.625.925z'/%3E%3C/svg%3E");
+  }
   .line-clamp-1 {
     overflow: hidden;
     display: -webkit-box;
@@ -481,15 +476,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .max-w-8 {
-    max-width: calc(var(--spacing) * 8);
-  }
-  .max-w-8\/10 {
-    max-width: calc(8/10 * 100%);
-  }
-  .max-w-8\/12 {
-    max-width: calc(8/12 * 100%);
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -536,14 +522,14 @@
   .gap-y-1\.5 {
     row-gap: calc(var(--spacing) * 1.5);
   }
-  .gap-y-2 {
-    row-gap: calc(var(--spacing) * 2);
-  }
-  .gap-y-2\.5 {
-    row-gap: calc(var(--spacing) * 2.5);
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
   }
   .rounded-\[20px\] {
     border-radius: 20px;
@@ -562,9 +548,6 @@
   .border-brands-light-green {
     border-color: var(--color-brands-light-green);
   }
-  .border-gray-200 {
-    border-color: var(--color-gray-200);
-  }
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
@@ -582,9 +565,6 @@
   }
   .bg-green-50 {
     background-color: var(--color-green-50);
-  }
-  .bg-green-500 {
-    background-color: var(--color-green-500);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -624,9 +604,6 @@
   }
   .pe-12 {
     padding-inline-end: calc(var(--spacing) * 12);
-  }
-  .pt-8 {
-    padding-top: calc(var(--spacing) * 8);
   }
   .pb-12 {
     padding-bottom: calc(var(--spacing) * 12);
@@ -689,9 +666,6 @@
   }
   .text-gray-500 {
     color: var(--color-gray-500);
-  }
-  .text-gray-600 {
-    color: var(--color-gray-600);
   }
   .text-gray-700 {
     color: var(--color-gray-700);
@@ -848,11 +822,6 @@
       --tw-ring-color: var(--color-green-400);
     }
   }
-  .focus\:ring-green-600 {
-    &:focus {
-      --tw-ring-color: var(--color-green-600);
-    }
-  }
   .focus\:outline-none {
     &:focus {
       --tw-outline-style: none;
@@ -889,11 +858,6 @@
   .disabled\:text-gray-400 {
     &:disabled {
       color: var(--color-gray-400);
-    }
-  }
-  .disabled\:text-gray-500 {
-    &:disabled {
-      color: var(--color-gray-500);
     }
   }
 }
