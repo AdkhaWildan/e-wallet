@@ -281,8 +281,8 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
-  .mt-\[92\] {
-    margin-top: 92;
+  .mt-\[88px\] {
+    margin-top: 88px;
   }
   .mt-\[92px\] {
     margin-top: 92px;
@@ -298,9 +298,6 @@
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
-  }
-  .mb-\[80px\] {
-    margin-bottom: 80px;
   }
   .icon-\[material-symbols--arrow-left-alt-rounded\] {
     display: inline-block;
@@ -431,19 +428,6 @@
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 6v-.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2v.8q0 .825-.587 1.413T18 20H6q-.825 0-1.412-.587T4 18'/%3E%3C/svg%3E");
-  }
-  .icon-\[material-symbols--question-mark-rounded\] {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    background-color: currentColor;
-    -webkit-mask-image: var(--svg);
-    mask-image: var(--svg);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
-    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M14.6 8.075q0-1.075-.712-1.725T12 5.7q-.725 0-1.312.313t-1.013.912q-.4.575-1.088.663T7.4 7.225q-.35-.325-.387-.8t.237-.9q.8-1.2 2.038-1.862T12 3q2.425 0 3.938 1.375t1.512 3.6q0 1.125-.475 2.025t-1.75 2.125q-.925.875-1.25 1.363T13.55 14.6q-.1.6-.513 1t-.987.4t-.987-.387t-.413-.963q0-.975.425-1.787T12.5 11.15q1.275-1.125 1.688-1.737t.412-1.338M12 22q-.825 0-1.412-.587T10 20t.588-1.412T12 18t1.413.588T14 20t-.587 1.413T12 22'/%3E%3C/svg%3E");
   }
   .icon-\[material-symbols--receipt-outline\] {
     display: inline-block;
@@ -586,14 +570,8 @@
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
-  .h-96 {
-    height: calc(var(--spacing) * 96);
-  }
   .h-\[1px\] {
     height: 1px;
-  }
-  .h-\[90px\] {
-    height: 90px;
   }
   .h-\[160px\] {
     height: 160px;
@@ -661,12 +639,6 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
-  .gap-8 {
-    gap: calc(var(--spacing) * 8);
-  }
-  .gap-10 {
-    gap: calc(var(--spacing) * 10);
-  }
   .gap-y-1 {
     row-gap: calc(var(--spacing) * 1);
   }
@@ -714,26 +686,11 @@
   .bg-green-50 {
     background-color: var(--color-green-50);
   }
-  .bg-pink-400 {
-    background-color: var(--color-pink-400);
-  }
-  .bg-red-200 {
-    background-color: var(--color-red-200);
-  }
-  .bg-red-300 {
-    background-color: var(--color-red-300);
-  }
   .bg-red-400 {
     background-color: var(--color-red-400);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
-  }
-  .bg-red-600 {
-    background-color: var(--color-red-600);
-  }
-  .bg-red-800 {
-    background-color: var(--color-red-800);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -786,6 +743,9 @@
   .ps-4 {
     padding-inline-start: calc(var(--spacing) * 4);
   }
+  .ps-6 {
+    padding-inline-start: calc(var(--spacing) * 6);
+  }
   .ps-12 {
     padding-inline-start: calc(var(--spacing) * 12);
   }
@@ -794,9 +754,6 @@
   }
   .pe-12 {
     padding-inline-end: calc(var(--spacing) * 12);
-  }
-  .pt-\[80px\] {
-    padding-top: 80px;
   }
   .pb-12 {
     padding-bottom: calc(var(--spacing) * 12);
@@ -809,6 +766,9 @@
   }
   .text-right {
     text-align: right;
+  }
+  .text-start {
+    text-align: start;
   }
   .font-family-brand {
     font-family: var(--font-family-brand);
@@ -839,6 +799,15 @@
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
+  .text-\[17px\] {
+    font-size: 17px;
+  }
+  .text-\[18px\] {
+    font-size: 18px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -876,6 +845,9 @@
   .text-gray-900 {
     color: var(--color-gray-900);
   }
+  .text-green-400 {
+    color: var(--color-green-400);
+  }
   .text-neutral-400 {
     color: var(--color-neutral-400);
   }
@@ -890,9 +862,6 @@
   }
   .underline {
     text-decoration-line: underline;
-  }
-  .opacity-50 {
-    opacity: 50%;
   }
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
