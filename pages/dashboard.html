@@ -45,8 +45,14 @@
             >
               <h1 class="font-brand text-2xl font-bold">Kusaku</h1>
               <h2 class="flex items-center gap-2 text-2xl font-medium">
-                <span>Rp. 3.000.000,00</span>
+                <span
+                  data-balance-value="Rp. 53.000.000,00"
+                  data-show-balance="true"
+                  id="balance"
+                  >Rp. 53.000.000,00</span
+                >
                 <button
+                  id="visibilityButton"
                   type="button"
                   class="icon-[material-symbols--visibility] text-md"
                 ></button>
@@ -85,7 +91,7 @@
           <!-- End Card Blance + Action -->
 
           <!-- Card Transaction -->
-          <div class="rounded-[20px] bg-white p-2.5 shadow-md">
+          <div class="rounded-[20px] bg-white p-2.5 pb-[80px] shadow-md">
             <!-- Card Header -->
             <div class="mb-2 flex items-center justify-between p-2.5">
               <p class="text-sm font-semibold text-gray-900">
@@ -317,5 +323,7 @@
       </div>
       <!-- End Navbar -->
     </div>
+
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>
